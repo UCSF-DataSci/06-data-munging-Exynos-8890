@@ -105,36 +105,36 @@ Name: count, Length: 114925, dtype: int64
 
 
 
-z_scores out of 3:  293 
+z_scores out of 3:  294 
 
 # clean data 
 
 ## info() 
  
 <class 'pandas.core.frame.DataFrame'>
-Index: 46373 entries, 0 to 95380
+Index: 46990 entries, 0 to 95380
 Data columns (total 5 columns):
  #   Column         Non-Null Count  Dtype         
 ---  ------         --------------  -----         
- 0   income_groups  46373 non-null  object        
- 1   age            46373 non-null  float64       
- 2   gender         46373 non-null  float64       
- 3   year           46373 non-null  datetime64[ns]
- 4   population     46373 non-null  float64       
+ 0   income_groups  46990 non-null  object        
+ 1   age            46990 non-null  float64       
+ 2   gender         46990 non-null  float64       
+ 3   year           46990 non-null  datetime64[ns]
+ 4   population     46990 non-null  float64       
 dtypes: datetime64[ns](1), float64(3), object(1)
-memory usage: 2.1+ MB
+memory usage: 2.2+ MB
 None 
 
 ## describe() 
                  age        gender                           year    population
-count  46373.000000  46373.000000                          46373  4.637300e+04
-mean      50.105686      1.580467  1986-07-17 01:38:26.195415360  1.684849e+07
+count  46990.000000  46990.000000                          46990  4.699000e+04
+mean      50.115705      1.580570  1987-01-12 17:14:23.111300224  1.676369e+07
 min        0.000000      1.000000            1950-01-01 00:00:00  2.200000e+01
-25%       25.000000      1.000000            1968-01-01 00:00:00  8.361420e+05
-50%       50.000000      2.000000            1987-01-01 00:00:00  4.333649e+06
-75%       75.000000      2.000000            2005-01-01 00:00:00  8.283864e+06
-max      100.000000      3.000000            2023-01-01 00:00:00  3.173332e+09
-std       29.191482      0.591477                            NaN  1.302569e+08 
+25%       25.000000      1.000000            1968-01-01 00:00:00  8.480102e+05
+50%       50.000000      2.000000            1987-01-01 00:00:00  4.374134e+06
+75%       75.000000      2.000000            2006-01-01 00:00:00  8.324320e+06
+max      100.000000      3.000000            2024-01-01 00:00:00  3.173332e+09
+std       29.185784      0.591614                            NaN  1.294103e+08 
 
 ## head() 
    income_groups  age  gender       year  population
@@ -158,32 +158,32 @@ dtype: int64
 ## value_counts: 
 
 income_groups
-low_income                  11092
-upper_middle_income         10990
-lower_middle_income         10947
-high_income                 10938
-upper_middle_income_typo      621
-low_income_typo               609
-lower_middle_income_typo      589
-high_income_typo              587
+low_income                  11240
+upper_middle_income         11147
+high_income                 11087
+lower_middle_income         11087
+upper_middle_income_typo      625
+low_income_typo               614
+high_income_typo              596
+lower_middle_income_typo      594
 Name: count, dtype: int64
 age
-34.0    482
-93.0    481
-45.0    481
-73.0    481
-94.0    480
+34.0    489
+93.0    488
+45.0    487
+73.0    486
+83.0    484
        ... 
-55.0    441
-35.0    439
-71.0    438
-51.0    434
-18.0    432
+82.0    447
+71.0    446
+35.0    445
+51.0    439
+18.0    437
 Name: count, Length: 101, dtype: int64
 gender
-2.0    21988
-1.0    21920
-3.0     2465
+2.0    22277
+1.0    22211
+3.0     2502
 Name: count, dtype: int64
 year
 1988-01-01    654
@@ -197,20 +197,20 @@ year
 1963-01-01    602
 1972-01-01    601
 1958-01-01    596
-Name: count, Length: 74, dtype: int64
+Name: count, Length: 75, dtype: int64
 population
 104.0        5
-143.0        5
 546.0        5
+143.0        5
 189.0        5
-454.0        4
+186.0        4
             ..
-852494.0     1
-871684.0     1
-891783.0     1
-912499.0     1
+721994.0     1
+734351.0     1
+765641.0     1
+781884.0     1
 7775405.0    1
-Name: count, Length: 45626, dtype: int64
+Name: count, Length: 46235, dtype: int64
 
 
 

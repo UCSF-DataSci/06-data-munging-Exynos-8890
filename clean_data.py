@@ -24,7 +24,7 @@ print_info(dirty)
 
 clean = dirty.copy()
 clean = clean.drop_duplicates().dropna().reset_index(drop=True)
-clean = clean[clean['year'] < 2024]
+clean = clean[clean['year'] <= 2024]
 
 z_scores = np.abs(stats.zscore(clean['population']))
 print("z_scores out of 3: ", (z_scores > 3).sum(),"\n")
@@ -34,3 +34,7 @@ clean['year'] = pd.to_datetime(clean['year'], format='%Y')
 
 print("# clean data \n")
 print_info(clean)
+
+# save clean data
+clean.to_csv('clean_population_data.csv', index=False)
+
