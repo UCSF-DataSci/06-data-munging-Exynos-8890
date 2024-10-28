@@ -33,9 +33,10 @@ You may use `example_readme.md` as a guide for some of what this could include. 
 
 ### Part 1: Identifying Data Issues
 
-1. Load the messy dataset ("messy_population_data.csv") using Python with pandas.
-2. Perform an exploratory data analysis (EDA) to identify data quality issues.
-3. Document each issue you discover in your `readme.md`, including:
+1. Load the messy dataset ("messy_po
+2. pulation_data.csv") using Python with pandas.
+3. Perform an exploratory data analysis (EDA) to identify data quality issues.
+4. Document each issue you discover in your `readme.md`, including:
    - Description of the issue
    - Column(s) affected
    - Example of the problematic data
